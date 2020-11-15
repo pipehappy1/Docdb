@@ -11,6 +11,7 @@ use std::io::Error;
 pub struct FileDrv {
     path: Rc<RefCell<PathBuf>>,
     fh: Rc<RefCell<File>>,
+    header_offset: i64,
 }
 
 impl FileDrv {
@@ -26,6 +27,7 @@ impl FileDrv {
         FileDrv {
             path: Rc::new(RefCell::new(fp)),
             fh: Rc::new(RefCell::new(file)),
+            header_offset: 1024,
         }
     }
 
