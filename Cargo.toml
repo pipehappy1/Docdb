@@ -1,0 +1,29 @@
+[package]
+name = "doc-db"
+version = "0.0.1"
+authors = ["yguan <yguan@example.com>"]
+edition = "2018"
+description = """
+A simple document database.
+
+
+"""
+documentation = "https://docs.rs/doc-db"
+homepage = "https://github.com/pipehappy1/Docdb"
+repository = "https://github.com/pipehappy1/Docdb"
+readme = "README.md"
+license = "MIT"
+keywords = ["document database"]
+exclude = ["/dev/**"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[dev-dependencies]
+criterion = "0.3"
+
+
+[features]
+
